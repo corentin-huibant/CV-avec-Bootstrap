@@ -1,46 +1,33 @@
-@media (max-width: 360px) {
-  #header {
-    margin: 0%;
+@media (min-width: 200px) and (max-width: 500px) {
+  .space  {
+    margin-top: 0px;
   }
-  #comput {
-    margin: 0%;
-    margin-top: none;
-  }
-  #xp {
-    margin: 0%;
-  }
-  #formation {
+  #header, #comput, #xp, #formation {
     margin: 0%;
   }
 }
-@media (max-width: 768px) {
-  #header {
-    margin: 0%;
+@media (min-width: 501px) and (max-width: 767px) {
+  .space  {
+    margin-top: 0px;
   }
-  #comput {
-    margin: 0%;
-    margin-top: none;
-  }
-  #xp {
-    margin: 0%;
-  }
-  #formation {
+  #header, #comput, #xp, #formation {
     margin: 0%;
   }
 }
-@media (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 1600px) and (orientation: landscape) {
   #header {
-    margin: 0%;
+    margin-top: 0.5%;
   }
   #comput {
-    margin: 0%;
-    margin-top: none;
+    margin-top: -24%;
+    margin-left: 1%;
   }
   #xp {
-    margin: 0%;
+    margin-top: -15.5%;
   }
   #formation {
-    margin: 0%;
+    margin-top: -7%;
+    margin-bottom: 3.3%;
   }
 }
 .container-fluid {  /*fond ordinateur CV*/
@@ -52,16 +39,15 @@
   background: linear-gradient(to left, #BCBCBC, #B8BAB8, #BABBBA, #BAB3BA);
   box-shadow: 1px 1px 2px 1px;
   z-index: 5;
-  margin-top: 0.5%;
 }
 .head { /*petit entête bleue*/
   Background: linear-gradient(to right, #04047C, #040C85, #061B8C, #082895, #09369C, #0A45A2, #0C3FA5, #0C51AE, #0C58B2, #0C68BB, #0B72C2, #0C77C6);
   border: 18% #04047C;
-  font-weight: bold;
-  color: white;
   height: 21px;
   font-size: 17px;
   margin-top: 0%;
+  font-weight: bold;
+  color: white;
 }
 #error { /*bloc d'erreur*/
   background: white;
@@ -100,8 +86,6 @@ input[title="depress"] { /*boutton supprimer*/
   background: linear-gradient(to left, #BCBCBC, #B8BAB8, #BABBBA, #BAB3BA);
   border: 3px ridge #BAB3BA;
   box-shadow: 1px 1px 2px 1px;
-  margin-top: -24%;
-  margin-left: 1%;
 }
 #comput:hover {
   z-index: 4;
@@ -162,7 +146,6 @@ td {
   border: 3px ridge #BAB3BA;
   box-shadow: black 1px 1px 2px 1px;
   z-index: 2;
-  margin-top: -15.5%;
 }
 #xp:hover {
   z-index: 5;
@@ -172,8 +155,6 @@ td {
   border: 3px ridge #BAB3BA;
   box-shadow: 1px 1px 2px 1px;
   z-index: 2;
-  margin-top: -7%;
-  margin-bottom: 1%;
 }
 #formation p {
   font-size: 15px;
@@ -206,6 +187,22 @@ button[title="close"] {
 }
 footer { /*menue démarrer*/
   background: linear-gradient(to left, #BCBCBC, #B8BAB8, #BABBBA, #BAB3BA);
+  height: 28px;
+}
+#links {
+  border: 2px inset gray;
+  height: 20px;
+  width: 15%;
+  position: absolute;
+  right: 1%;
+  margin-top: 0.3ex;
+}
+#links span {
+  margin-top: 1%;
+}
+#bluebar { /*La barre bleue verticale qui se trouve dans le menu*/
+    width: 2%;
+    background: blue;
 }
 #openWindow { /*Début de la colone du menu défilant*/
   background: linear-gradient(to left, #BCBCBC, #B8BAB8, #BABBBA, #BAB3BA);
@@ -213,10 +210,6 @@ footer { /*menue démarrer*/
   overflow: auto;
   margin-top: -35.7%;
   z-index: 6;
-}
-#bluebar { /*La barre bleue verticale qui se trouve dans le menu*/
-    width: 2%;
-    background: blue;
 }
 #opacOne { /*les fausses catégories*/
   margin-left: 11%;
@@ -284,23 +277,11 @@ div[title="error318"]:hover { /*Le clignotement bleu*/
   color: #4A494F;
   background: right #BAB3BA;
 }
-#links {
-  border: 2px inset gray;
-}
-#links span {
-  margin-top: 1%;
-}
 img[alt="github"] {
   width: 10%;
 }
 img[alt="linkedin"] {
   width: 10%;
-}
-h2 {
-  Background: linear-gradient(to right, #04047C, #040C85, #061B8C, #082895, #09369C, #0A45A2, #0C3FA5, #0C51AE, #0C58B2, #0C68BB, #0B72C2, #0C77C6);
-  border: 18% ridge #04047C;
-  color: white;
-  margin-top: -0.1%;
 }
 strong {
   font-weight: bold;
