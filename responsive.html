@@ -3,6 +3,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HUIBANT Corentin, CV en ligne</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><!--application de jquery-->
     <link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.min.css">
@@ -11,7 +12,7 @@
 <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xs-offset-8 col-sm-offset-8 col-md-offset-8 col-lg-offset-8 col-xs-12 col-sm-4 col-md-4 col-lg-4" id="header">
+        <div class="col-xs-offset-8 col-sm-offset-7 col-md-offset-7 col-lg-offset-8 col-xs-12 col-sm-5 col-md-5 col-lg-4" id="header">
           <div class="row">
               <h1 class="head col-xs-12 col-sm-12 col-md-12 col-lg-12">Erreur ! CV en ligne
                 <div id="buttonPlace">
@@ -27,8 +28,8 @@
             </div>
           </div>
           <div class=row>
-            <div id="description" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <img src="contenu/smiley1.png" alt="photo" id="smiley">
+            <img class="col-xs-5 col-sm-5 col-md-5 col-lg-5" src="contenu/smiley1.png" alt="photo" id="smiley">
+            <div id="description" class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
                 <p><strong>HUIBANT, Corentin</strong></p>
                 <p>11 rue de genlis</p>
                 <p>02300 Bethancourt-en-Vaux</p>
@@ -55,7 +56,7 @@
               </h2>
           </div>
           <div class="row">
-              <img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="contenu/logo2.gif" alt="navigator">
+          <img id="navigator" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="contenu/logo2.gif" alt="navigator">
           </div>
           <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="whiteWindow">
@@ -210,10 +211,12 @@
       <footer class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="row">
           <input class="col-xs-3 col-sm-2 col-md-2 col-lg-1" type="button" name="menuError" value="Erreur!" id="menu">
-            <div id="links">
-              <a href="https://github.com/corentin-huibant" target="_blank"><img src="contenu/github.png" alt="github"></a>
-              <a href="https://fr.linkedin.com/in/corentin-huibant-0b5650138" target="_blank"><img src="contenu/Linkedin.png" alt="linkedin"></a>
-              <span>heure:reur</span>
+            <div class="col-xs-offset-5 col-sm-offset-7 col-md-offset-8 col-lg-offset-9 col-xs-4 col-sm-3 col-md-2 col-lg-2" id="links">
+              <div class="row">
+              <a class="col-xs-1 col-sm-1 col-md-1 col-lg-1" href="https://github.com/corentin-huibant" target="_blank"><img src="contenu/github.png" alt="github"></a>
+              <a class="col-xs-1 col-sm-1 col-md-1 col-lg-1" href="https://fr.linkedin.com/in/corentin-huibant-0b5650138" target="_blank"><img src="contenu/Linkedin.png" alt="linkedin"></a>
+              <span class="col-xs-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1  col-xs-4 col-sm-4 col-md-3 col-lg-3">heure:reur</span>
+              </div>
           </div>
         </div>
       </footer>
