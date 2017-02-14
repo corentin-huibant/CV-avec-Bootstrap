@@ -22,6 +22,22 @@
     margin-bottom: 3.3%;
   }
 }
+@media (min-width: 768px) and (position: landscape) {
+  #header {
+    margin-top: 0.5%;
+  }
+  #comput {
+    margin-top: -24%;
+    margin-left: 1%;
+  }
+  #xp {
+    margin-top: -15.5%;
+  }
+  #formation {
+    margin-top: -7%;
+    margin-bottom: 3.3%;
+  }
+}
 @media (min-width: 992px) {
   #header {
     margin-top: 0.5%;
@@ -38,7 +54,39 @@
     margin-bottom: 3.3%;
   }
 }
+@media (min-width: 992px) and (position: landscape) {
+  #header {
+    margin-top: 0.5%;
+  }
+  #comput {
+    margin-top: -24%;
+    margin-left: 1%;
+  }
+  #xp {
+    margin-top: -15.5%;
+  }
+  #formation {
+    margin-top: -7%;
+    margin-bottom: 3.3%;
+  }
+}
 @media (min-width: 1200px) {
+  #header {
+    margin-top: 0.5%;
+  }
+  #comput {
+    margin-top: -24%;
+    margin-left: 1%;
+  }
+  #xp {
+    margin-top: -15.5%;
+  }
+  #formation {
+    margin-top: -7%;
+    margin-bottom: 3.3%;
+  }
+}
+@media (min-width: 1200px) and (position: landscape) {
   #header {
     margin-top: 0.5%;
   }
@@ -220,16 +268,23 @@ footer { /*menue démarrer*/
 #links span {
   margin-top: 1%;
 }
-#bluebar { /*La barre bleue verticale qui se trouve dans le menu*/
-    width: 2%;
-    background: blue;
-}
 #openWindow { /*Début de la colone du menu défilant*/
+  width: 17%;
   background: linear-gradient(to left, #BCBCBC, #B8BAB8, #BABBBA, #BAB3BA);
+  position: absolute;
+  bottom: 22.8px;
+  z-index: 6;
   border: 2px outset gray;
   overflow: auto;
-  margin-top: -35.7%;
-  z-index: 6;
+  padding: 0%;
+}
+#bluebar { /*La barre bleue verticale qui se trouve dans le menu*/
+  width: 12%;
+  height: 100%;
+  background: blue;
+  position: absolute;
+  bottom: 0px;
+  margin-left: -2%;
 }
 #opacOne { /*les fausses catégories*/
   margin-left: 11%;
@@ -284,7 +339,7 @@ footer { /*menue démarrer*/
   padding-bottom: 9%;
   margin-top: -11%;
 }
-div[title="error318"]:hover { /*Le clignotement bleu*/
+div[title="error2017"]:hover { /*Le clignotement bleu*/
   background-color: #03007A;
   color: white;
 }
@@ -327,6 +382,7 @@ li {
 a {
   color: blue;
   text-decoration: none;
+  word-wrap: break-word;
 }
 a:hover {
   text-decoration: underline;
